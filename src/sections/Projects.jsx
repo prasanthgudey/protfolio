@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 px-4 md:px-20 bg-gradient-to-br from-sky-900 via-indigo-900 to-slate-900 text-white relative z-10"
+      className="py-20 px-4 md:px-10 lg:px-16 xl:px-24 bg-gradient-to-br from-sky-900 via-indigo-900 to-slate-900 text-white relative z-10"
     >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
@@ -51,14 +51,14 @@ const Projects = () => {
         Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ delay: index * 0.2 }}
-            className="relative bg-white/10 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/20 hover:scale-[1.02] hover:shadow-cyan-700/30 transition-transform duration-300"
+            className="relative bg-white/10 dark:bg-slate-800/30 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/20 hover:scale-[1.02] hover:shadow-cyan-700/30 transition-transform duration-300"
           >
             {/* Badge */}
             <div className="absolute -top-3 -right-3 bg-cyan-700/30 text-cyan-200 text-xs px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
@@ -80,7 +80,7 @@ const Projects = () => {
             </h3>
 
             {/* Description */}
-            <p className="text-slate-300 text-sm text-center mb-4 line-clamp-2">
+            <p className="text-slate-300 dark:text-slate-400 text-sm text-center mb-4 line-clamp-2">
               {project.description}
             </p>
 
@@ -89,7 +89,7 @@ const Projects = () => {
               {project.tech.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="text-xs bg-cyan-700/20 text-cyan-300 px-2 py-1 rounded-full backdrop-blur-sm border border-white/10"
+                  className="text-xs bg-cyan-700/20 dark:bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded-full backdrop-blur-sm border border-white/10"
                 >
                   {tech}
                 </span>

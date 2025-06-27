@@ -10,7 +10,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="relative font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-white transition-colors duration-500">
+    <div className="min-h-screen w-full overflow-x-hidden font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-white transition-colors duration-500">
+
       {/* Dark mode toggle button */}
       <DarkModeToggle />
 

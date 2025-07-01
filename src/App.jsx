@@ -14,7 +14,7 @@ const App = () => {
     <div className="min-h-screen w-full overflow-x-hidden font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-white transition-colors duration-500">
 
       {/* Dark mode toggle button */}
-      <DarkModeToggle />
+{/*       <DarkModeToggle /> */}
 
       {/* Main Sections */}
       <Navbar/>

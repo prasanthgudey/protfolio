@@ -20,7 +20,13 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-4 md:px-20 bg-gradient-to-br from-sky-900 via-indigo-900 to-slate-900 text-white relative z-10">
+    <section
+      id="skills"
+      className="py-20 px-4 md:px-20
+      bg-gradient-to-br from-sky-100 via-white to-slate-100
+      dark:from-gray-900 dark:via-slate-900 dark:to-black
+      text-slate-800 dark:text-white transition-colors duration-500"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +40,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="text-slate-300 text-center max-w-2xl mx-auto mb-12 text-lg"
+        className="text-slate-700 dark:text-slate-300 text-center max-w-2xl mx-auto mb-12 text-lg"
       >
         Here are the technologies I've worked with to build dynamic, scalable, and visually appealing full-stack applications.
       </motion.p>
@@ -46,10 +52,17 @@ const Skills = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: index * 0.1 }}
-            className="flex flex-col items-center justify-center p-4 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md hover:scale-110 transition-transform shadow-xl"
+            className="flex flex-col items-center justify-center p-4
+            bg-white/30 dark:bg-white/5
+            border border-slate-300 dark:border-white/10
+            rounded-xl backdrop-blur-md
+            hover:scale-110 transition-transform
+            shadow-md dark:shadow-xl"
           >
-            <div className="text-4xl text-cyan-400 mb-2">{skill.icon}</div>
-            <p className="text-slate-200 font-medium text-center text-sm md:text-base">{skill.name}</p>
+            <div className="text-4xl text-indigo-600 dark:text-cyan-400 mb-2">{skill.icon}</div>
+            <p className="text-slate-800 dark:text-slate-200 font-medium text-center text-sm md:text-base">
+              {skill.name}
+            </p>
           </motion.div>
         ))}
       </div>

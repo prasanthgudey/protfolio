@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from './sections/Hero';
+import Home from './sections/Home';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
@@ -7,6 +7,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import DarkModeToggle from './components/DarkModeToggle';
 import './App.css';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <DarkModeToggle />
 
       {/* Main Sections */}
-      <Hero />
+      <Navbar/>
+      <Home />
       <About />
       <Skills />
       <Projects />

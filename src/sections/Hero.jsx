@@ -29,7 +29,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="text-lg text-slate-200 dark:text-slate-400 mb-2"
         >
-          👋 Hello, I'm
+          👋 Hellooo, I'm
         </motion.p>
 
         <motion.h1

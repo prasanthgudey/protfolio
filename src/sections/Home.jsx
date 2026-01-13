@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import profilePic from '../assets/prasanthh.jpg'; // Ensure image exists in /src/assets/
+import profilePic from '../prasanthh.jpg'; // Ensure image exists in /src/assets/
 
 const Home = () => {
   return (
